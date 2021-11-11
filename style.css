@@ -13,12 +13,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-/** scroll snap **/
+/** scroll snap 
 .servicios,
 .navegacion-principal,
 .formulario {
     scroll-snap-align: center;
-}
+}**/
 
 *,
 *:before,
@@ -28,7 +28,6 @@ html {
 
 
 body {
-
     font-family     : 'Krub', sans-serif;
     background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100%);
 }
@@ -88,12 +87,6 @@ h3 {
     border          : none;
 }
 
-@media (min-widh: 768px) {
-    .boton {
-        width: auto;
-    }
-}
-
 .boton:hover {
     cursor: pointer;
 }
@@ -111,12 +104,6 @@ h3 {
 /** utilidades **/
 .w-sm-100 {
     width: 100%;
-}
-
-@media (min-width: 768px) {
-    .w-sm-100 {
-        width: auto;
-    }
 }
 
 .flex {
@@ -143,9 +130,6 @@ h3 {
         flex-direction: column;
     }
 }
-
-
-
 
 
 .navegacion-principal a {
@@ -192,40 +176,20 @@ h3 {
     color: var(--blanco);
 }
 
+.servicio {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
 
-
-
-@media (min-width: 768px) {
-
-    .servicios {
-
-        display              : grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /*esto es igual a repeat(3, 1fr)*/
-        column-gap           : 10px;
-
-
-    }
-
-    .servicio {
-        display       : flex;
-        flex-direction: column;
-        align-items   : center;
-    }
-
-    .servicio p {}
-
-    .servicio h3 {}
-
-    .servicio .iconos {
-        height          : 150px;
-        width           : 150px;
-        background-color: var(--primario);
-        border-radius   : 50%;
-        display         : flex;
-        justify-content : center;
-        align-items     : center;
-    }
+.servicio .iconos {
+    height          : 150px;
+    width           : 150px;
+    background-color: var(--primario);
+    border-radius   : 50%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
 }
 
 /** contacto **/
@@ -253,6 +217,18 @@ h3 {
 }
 
 @media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+    .boton {
+        width: auto;
+    }
+    .servicios {
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*esto es igual a repeat(3, 1fr)*/
+        column-gap           : 10px;
+    }
     .contenedor-campos {
         display              : grid;
         grid-template-columns: 50% 50%;
